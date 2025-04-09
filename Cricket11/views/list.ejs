@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket11</title>
+</head>
+<body>
+    <h1>MAKE YOUR FAVOURITE CRICKET 11</h1>
+    <%for(var i=0;i<newplayerList.length;i++){%>
+        <ul>
+           <li> <%=newplayerList[i]%> </li>
+        </ul>
+    <%}%>
+    <form action="/" method="post" class="list">
+        <input type="text" name="newPlayer">
+        <button type="submit" name="button">Add</button>
+    </form>
+</body>
+</html>
